@@ -4,7 +4,7 @@ A modern, secure, and GDPR-compliant relaunch of a historic Berlin restaurant's
 website (est. 1870, Richardplatz, Berlin-Neukölln) — same visual identity, rebuilt
 from the ground up.
 
-**🔗 Live demo:** https://blucaryo.github.io/rixdorf-villa-rework/
+**🔗 Live demo:** https://blucaryo.github.io/rixdrf-villa-rework/
 
 ---
 
