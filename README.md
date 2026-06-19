@@ -3,7 +3,7 @@
 A modern relaunch of a Berlin restaurant's
 website (est. 1870, Richardplatz, Berlin-Neukölln) VILLA RIXDORF.
 
-**🔗 Live:** https://blucaryo.github.io/rixdrf-villa-rework/
+** Try it out -> :** https://blucaryo.github.io/rixdrf-villa-rework/
 
 ---
 
