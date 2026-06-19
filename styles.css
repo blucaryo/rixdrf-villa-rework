@@ -13,14 +13,18 @@
 :root {
   color-scheme: light dark;
 
-  /* LIGHT palette — replace these six to match your site exactly */
-  --color-bg:      #faf6ef;   /* page background (warm cream)        */
-  --color-surface: #ffffff;   /* cards / panels                      */
-  --color-text:    #2b2420;   /* body text (dark brown)              */
-  --color-heading: #7a2e2e;   /* headings + primary accent (Bordeaux)*/
-  --color-accent:  #9a6b2f;   /* links (gold-brown, AA on cream)     */
-  --color-line:    #e3d9c8;   /* hairlines & dividers                */
-  --color-muted:   #6b6258;   /* secondary text                      */
+  /* LIGHT palette — Villa Rixdorf: Grün + Gold */
+  --color-bg:          #f7f4ec;   /* warmes Creme */
+  --color-surface:     #ffffff;   /* Karten / Panels */
+  --color-text:        #1e2a1e;   /* dunkles Grün für Fließtext */
+  --color-heading:     #2d5016;   /* Haus-Grün (Zaun, Schild) */
+  --color-accent:      #b8860b;   /* Logo-Gold */
+  --color-line:        #d6ceae;   /* Trennlinien */
+  --color-muted:       #5a6248;   /* Sekundärtext */
+
+  /* Header/Footer: dunkles Grün damit Gold-Logo lesbar ist */
+  --color-header-bg:   #1e3a0e;
+  --color-header-text: #f5e9c0;
 
   /* spacing scale */
   --space-1: .25rem;  --space-2: .5rem;  --space-3: 1rem;
