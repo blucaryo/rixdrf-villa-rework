@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!-- =============================================================================
+     STATISCHE DEMO-VERSION des Reservierungsformulars (für GitHub Pages).
+     Sendet NICHT. Auf echtem Hosting die sichere "reservierung.php" verwenden
+     und die Reservierungs-Links im Menü von .html auf .php umstellen.
+     ============================================================================ -->
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservierung – Café Restaurant Villa Rixdorf</title>
+  <meta name="description" content="Reservieren Sie Ihren Tisch im Café Restaurant Villa Rixdorf am Richardplatz 6 in Berlin-Neukölln.">
+  <meta name="robots" content="index,follow">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <link rel="icon" href="logo.gif">
+  <link rel="stylesheet" href="styles.css?v=2026-06-18">
+  <script src="theme.js?v=2026-06-18"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="index.html" aria-label="Startseite – Café Restaurant Villa Rixdorf">
+        <img src="logo.gif" width="220" height="72" alt="Café Restaurant Villa Rixdorf">
+      </a>
+      <div class="site-header__controls">
+        <button class="icon-btn theme-toggle" type="button" aria-pressed="false" aria-label="Zu dunklem Design wechseln">
+          <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M19 5l-1.5 1.5M6.5 17.5L5 19" stroke-linecap="round"/></svg>
+        </button>
+        <button class="icon-btn nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Menü öffnen">
+          <span class="nav-toggle__bars"><span></span></span>
+        </button>
+      </div>
+      <nav id="primary-nav" class="main-nav" aria-label="Hauptnavigation">
+        <ul>
+          <li><a href="index.html">Startseite</a></li>
+          <li><a href="geschichte.html">Geschichte</a></li>
+          <li><a href="karte.html">Speisekarte</a></li>
+          <li><a href="galerie.html">Bilder</a></li>
+          <li><a href="reservierung.html" aria-current="page">Reservierung</a></li>
+          <li><a href="aktuelles.html">Aktuelles</a></li>
+          <li><a href="profil.html">Über uns</a></li>
+          <li><a href="impressum.html">Impressum &amp; Datenschutz</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <h1>Reservierung</h1>
+
+    <div class="notice notice--ok" role="note" style="border-color:var(--color-accent);background:rgba(127,127,127,.12)">
+      <strong>Demo-Ansicht:</strong> In dieser Vorschau wird nichts gesendet. Auf der
+      Live-Seite wird Ihre Anfrage verschlüsselt und sicher verarbeitet.
+    </div>
+
+    <div class="card">
+      <p class="prose">Reservieren Sie Ihren Tisch bequem über das Formular. Felder mit <span class="req">*</span> sind erforderlich.</p>
+
+      <form>
+        <div class="form-grid form-grid--2">
+          <div class="field">
+            <label for="name">Name <span class="req">*</span></label>
+            <input type="text" id="name" name="name" maxlength="80" autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="email">E-Mail <span class="req">*</span></label>
+            <input type="email" id="email" name="email" maxlength="120" autocomplete="email">
+          </div>
+          <div class="field">
+            <label for="phone">Telefon</label>
+            <input type="tel" id="phone" name="phone" maxlength="30" autocomplete="tel">
+          </div>
+          <div class="field">
+            <label for="guests">Personen <span class="req">*</span></label>
+            <input type="number" id="guests" name="guests" min="1" max="50">
+          </div>
+          <div class="field">
+            <label for="date">Datum <span class="req">*</span></label>
+            <input type="date" id="date" name="date">
+          </div>
+          <div class="field">
+            <label for="time">Uhrzeit <span class="req">*</span></label>
+            <input type="time" id="time" name="time">
+          </div>
+        </div>
+
+        <div class="field" style="margin-top:var(--space-4)">
+          <label for="message">Nachricht (optional)</label>
+          <textarea id="message" name="message" maxlength="1000"></textarea>
+          <span class="field--hint">z. B. Anlass, Sitzwunsch (Terrasse), Allergien</span>
+        </div>
+
+        <div class="consent" style="margin-top:var(--space-4)">
+          <input type="checkbox" id="consent" name="consent" value="1">
+          <label for="consent">
+            Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen und stimme der
+            Verarbeitung meiner Daten zur Bearbeitung meiner Reservierungsanfrage zu. <span class="req">*</span>
+          </label>
+        </div>
+
+        <p style="margin-top:var(--space-4)">
+          <!-- type="button": in der Demo wird nichts gesendet -->
+          <button class="btn btn--primary" type="button">Reservierung senden</button>
+        </p>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <nav class="footer-nav" aria-label="Fußnavigation">
+        <ul>
+          <li><a href="index.html">Startseite</a></li>
+          <li><a href="geschichte.html">Geschichte</a></li>
+          <li><a href="karte.html">Speisekarte</a></li>
+          <li><a href="galerie.html">Bilder</a></li>
+          <li><a href="reservierung.html" aria-current="page">Reservierung</a></li>
+          <li><a href="aktuelles.html">Aktuelles</a></li>
+          <li><a href="profil.html">Über uns</a></li>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+        </ul>
+      </nav>
+      <p class="footer-meta">Café Restaurant Villa Rixdorf · Richardplatz 6 · 12055 Berlin</p>
+    </div>
+  </footer>
+</body>
+</html>
